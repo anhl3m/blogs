@@ -1,0 +1,13 @@
+<div class="scrollable-container">
+  <div class="layout">
+    <ng-content select="app-header"></ng-content>
+    <div class="layout-container">
+      <div class="content">
+        <div class="columns">
+          <ng-content select="router-outlet"></ng-content>
+        </div>
+        <ng-content select="app-footer"></ng-content>
+      </div>
+    </div>
+  </div>
+</div>
