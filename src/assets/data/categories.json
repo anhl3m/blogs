@@ -1,0 +1,20 @@
+{
+  "data": [
+    {
+      "id": 0,
+      "name": "All Post"
+    },
+    {
+      "id": 1,
+      "name": "Quick & Easy"
+    },
+    {
+      "id": 2,
+      "name": "Vegetarian"
+    },
+    {
+      "id": 3,
+      "name": "Main Course"
+    }
+  ]
+}

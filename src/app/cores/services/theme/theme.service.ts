@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Theme, defaultTheme } from 'app/themes/styles';
+import { Theme, defaultTheme } from 'src/app/themes/styles';
 
 @Injectable()
 export class ThemeService {

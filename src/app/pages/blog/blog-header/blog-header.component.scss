@@ -1,0 +1,34 @@
+@import 'variables';
+
+nav {
+  height: 80px;
+  display: flex;
+  width: 100%;
+  
+  .blog-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    &__item {
+      cursor: pointer;
+      white-space: nowrap;
+      margin-right: 40px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        color: $black;
+      }
+    }
+    
+    .active {
+      color: $blog-header-active;
+    }
+  }
+}

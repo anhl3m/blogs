@@ -1,0 +1,7 @@
+<nav>
+  <ul class="blog-header">
+    <li class="blog-header__item" *ngFor="let item of categories;">
+        <a [routerLink]="['/blog', item.id]" [routerLinkActive]="['active']">{{item.name}}</a>
+    </li>
+  </ul>
+</nav>

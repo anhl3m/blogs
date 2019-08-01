@@ -1,0 +1,19 @@
+.blog-detail {
+
+  &__description {
+    padding: 15px 0;
+    font-weight: bold;
+  }
+
+  &__image {
+    padding-bottom: 15px;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__content {
+    padding-bottom: 20px;
+  }
+}

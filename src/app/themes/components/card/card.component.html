@@ -1,0 +1,10 @@
+<nz-card nzHoverable [nzCover]="coverTemplate">
+  <nz-card-meta
+    [nzTitle]="blog?.title"
+    [nzDescription]="blog?.description"
+    (click)="openBlog()" 
+  ></nz-card-meta>
+</nz-card>
+<ng-template #coverTemplate>
+  <img alt="example" [src]="blog?.image" />
+</ng-template>

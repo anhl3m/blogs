@@ -9,9 +9,9 @@ import { PagesComponent } from './pages.component';
 const routes: Routes = [
   {
     path: '', component: PagesComponent, children: [
-      { path: 'home', component: HomeComponent },
-      { path: 'about', component: AboutComponent },
-      { path: 'blog', component: BlogComponent },
+      { path: 'home', loadChildren: () => import('./home/home.module').then(m => m.HomeModule) },
+      { path: 'about', loadChildren: () => import('./about/about.module').then(m => m.AboutModule) },
+      { path: 'blog', loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule) },
       { path: '', redirectTo: 'home', pathMatch: 'full', },
       { path: '**', redirectTo: 'home', pathMatch: 'full' }
     ]

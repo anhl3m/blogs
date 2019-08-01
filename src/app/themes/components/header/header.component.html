@@ -1,3 +1,20 @@
-<nav fixed>
-  header components
-</nav>
+<div class="header">
+  <div class="header-menu">
+    <nav>
+      <ul class="navigation">
+        <li class="header-menu-item">
+          <a [routerLink]="['/home']" [routerLinkActive]="['is-active']">HOME</a>
+        </li>
+        <li class="header-menu-item">
+          <a [routerLink]="['/blog']" [routerLinkActive]="['is-active']">BLOG</a>
+        </li>
+        <li class="header-menu-item">
+            <a [routerLink]="['/about']" [routerLinkActive]="['is-active']">ABOUT</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="header-img">
+    <img src="assets/images/background.png" alt="" srcset="">
+  </div>
+</div>
